@@ -1,0 +1,205 @@
+﻿@charset "UTF-8";
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #ccc;
+}
+
+#form1 {
+    width: 1137px;
+    overflow: hidden;
+}
+
+/* 메인 메뉴 */
+.main_menu {
+    padding: 5px 0;
+    background: #34495e;
+    position: fixed;
+    width: 80px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.sd_list {
+    padding-left: 5px;
+}
+
+    .sd_list > a {
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        display: block;
+        color: #fff;
+    }
+
+        .sd_list > a:hover, .sd_list > a.selected {
+            background: #fff;
+            color: #34495e;
+            font-weight: bold;
+        }
+
+/* 서브 메뉴 */
+.sub_menu {
+    padding: 5px 0;
+    background: #fff;
+    color: #34495e;
+    position: fixed;
+    width: 210px;
+    top: 0;
+    left: 80px;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.sgg_list > a {
+    padding: 5px;
+    display: block;
+    color: #34495e;
+}
+
+    .sgg_list > a:hover, .sgg_list > a.selected {
+        background: #eee;
+        font-weight: bold;
+    }
+
+    .sgg_list > a > .dispname {
+        color: blue;
+        /* ?일 때 */
+        display: inline-block;
+        width: 16px;
+        text-align: center;
+    }
+
+/* 왼쪽 내용 */
+.left_contents {
+    float: left;
+    margin-left: 290px;
+    width: 600px;
+    padding: 20px 0 20px 20px;
+}
+
+    .left_contents ul {
+        margin-top: 20px;
+    }
+
+.hubo_list {
+    background: #fff;
+    border-radius: 10px;
+}
+
+    .hubo_list + .hubo_list {
+        margin-top: 5px;
+    }
+
+.offer {
+    font-size: 13px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* 후보 테이블 */
+table {
+    border-collapse: collapse;
+}
+
+.hubo_table .giho {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+}
+
+    .hubo_table .giho > span {
+        font-size: 30px;
+    }
+
+.hubo_table .photo {
+    width: 100%;
+}
+
+.hubo_table .name, .hubo_table .ggpyo, .hubo_table .bar {
+    padding-left: 10px;
+}
+
+    .hubo_table .name > span {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+.hubo_table .seq {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+    .hubo_table .seq > .seq1 {
+        color: red;
+    }
+
+    .hubo_table .seq > .seq2 {
+        color: blue;
+    }
+
+.hubo_table .ggpyo {
+    text-align: right;
+}
+
+.hubo_table .pangb {
+    border-left: 1px solid #ccc;
+}
+
+    .hubo_table .pangb > table {
+        width: 100%;
+        text-align: center;
+        line-height: 160%;
+    }
+
+/* 오른쪽 내용 */
+.right_contents {
+    float: right;
+    padding: 20px;
+}
+
+.timer {
+    text-align: right;
+}
+
+/* 결과 테이블 */
+.result_table {
+    margin: 20px 0;
+}
+
+    .result_table caption {
+        background: beige;
+        font-weight: bold;
+    }
+
+    .result_table caption, .result_table th, .result_table td {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+    }
+
+    .result_table th {
+        background: beige;
+        font-weight: normal;
+    }
+
+    .result_table td {
+        text-align: right;
+        background: #fff;
+    }
+
+/* 버튼 */
+.result_btn {
+    width: 100%;
+    height: 35px;
+    font-weight: bold;
+}
+
+    .result_btn + .result_btn {
+        margin-top: 5px;
+    }

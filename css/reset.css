@@ -1,0 +1,39 @@
+﻿@charset "UTF-8";
+
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, table, textarea {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, button {
+    border: 0;
+    outline: 0;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
